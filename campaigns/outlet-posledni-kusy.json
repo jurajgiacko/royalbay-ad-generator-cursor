@@ -14,17 +14,17 @@
     {
       "id": "posledni-kusy-CZ",
       "image": "assets/photos/trail-runner-pink.png",
-      "claim": "Vybrané modely<br>se slevou <strong>30 %</strong>",
-      "badge": "OUTLET",
-      "subheading": "Některé barvy a velikosti docházejí. Sleva je přímo v ceně.",
+      "claim": "NAKUPTE,<br>NEŽ DOJDOU",
+      "badge": "POSLEDNÍ KUSY",
+      "subheading": "Kým jsou na skladě",
       "cta": "Objednat teď"
     },
     {
       "id": "posledni-kusy-SK",
       "image": "assets/photos/trail-runner-pink.png",
-      "claim": "Vybrané modely<br>so zľavou <strong>30 %</strong>",
-      "badge": "OUTLET",
-      "subheading": "Niektoré farby a veľkosti dochádzajú. Zľava je priamo v cene.",
+      "claim": "NAKÚPTE,<br>KÝM SÚ",
+      "badge": "POSLEDNÉ KUSY",
+      "subheading": "Kým sú na sklade",
       "cta": "Objednať teraz"
     }
   ]
