@@ -1,0 +1,30 @@
+{
+  "templateId": "web-hero",
+  "sizes": [
+    { "id": "web-hero-1920x600", "width": 1920, "height": 600 },
+    { "id": "web-hero-1920x800", "width": 1920, "height": 800 },
+    { "id": "web-category-1200x400", "width": 1200, "height": 400 }
+  ],
+  "defaults": {
+    "photoPosition": "center center",
+    "overlayGradient": "linear-gradient(90deg, rgba(0,0,0,0.75) 0%, rgba(0,0,0,0.45) 35%, rgba(0,0,0,0.05) 65%, transparent 100%)",
+    "contentJustify": "center",
+    "contentPadding": "40px 60px",
+    "logoTop": "24px",
+    "logoRight": "32px",
+    "logoHeight": "48px",
+    "badgeFontSize": "16px",
+    "badgePadding": "8px 20px",
+    "badgeRadius": "4px",
+    "badgeMarginBottom": "14px",
+    "claimFontSize": "56px",
+    "claimLineHeight": "1.05",
+    "claimMarginBottom": "14px",
+    "claimMaxWidth": "45%",
+    "subheadingFontSize": "20px",
+    "subheadingMarginBottom": "24px",
+    "ctaFontSize": "18px",
+    "ctaPadding": "14px 36px",
+    "ctaRadius": "6px"
+  }
+}

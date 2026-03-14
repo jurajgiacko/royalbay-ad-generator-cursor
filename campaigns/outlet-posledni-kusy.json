@@ -1,0 +1,23 @@
+{
+  "campaign": "Royal Bay Outlet - Poslední kusy",
+  "brand": "royalbay",
+  "created": "2026-03-14",
+  "author": "Juraj",
+
+  "defaults": {
+    "cta": "Objednať teraz",
+    "template": "landscape",
+    "preset": "minimum_viable"
+  },
+
+  "variants": [
+    {
+      "id": "posledni-kusy-01",
+      "image": "assets/photos/trail-runner-pink.png",
+      "claim": "NAKUPTE, NEŽ DOJDOU",
+      "badge": "POSLEDNÍ KUSY",
+      "subheading": "Kým sú na sklade",
+      "cta": "Objednať teraz"
+    }
+  ]
+}

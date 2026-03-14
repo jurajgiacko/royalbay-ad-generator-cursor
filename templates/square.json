@@ -1,0 +1,28 @@
+{
+  "templateId": "square",
+  "sizes": [
+    { "id": "square-1080x1080", "width": 1080, "height": 1080 }
+  ],
+  "defaults": {
+    "photoPosition": "center 30%",
+    "overlayGradient": "linear-gradient(0deg, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.4) 45%, rgba(0,0,0,0.05) 70%, transparent 100%)",
+    "contentJustify": "flex-end",
+    "contentPadding": "50px",
+    "logoTop": "30px",
+    "logoRight": "30px",
+    "logoHeight": "44px",
+    "badgeFontSize": "16px",
+    "badgePadding": "8px 20px",
+    "badgeRadius": "4px",
+    "badgeMarginBottom": "14px",
+    "claimFontSize": "52px",
+    "claimLineHeight": "1.05",
+    "claimMarginBottom": "14px",
+    "claimMaxWidth": "80%",
+    "subheadingFontSize": "20px",
+    "subheadingMarginBottom": "24px",
+    "ctaFontSize": "18px",
+    "ctaPadding": "14px 36px",
+    "ctaRadius": "6px"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "templateId": "landscape",
+  "sizes": [
+    { "id": "landscape-1200x628", "width": 1200, "height": 628 }
+  ],
+  "defaults": {
+    "photoPosition": "center center",
+    "overlayGradient": "linear-gradient(90deg, rgba(0,0,0,0.75) 0%, rgba(0,0,0,0.45) 40%, rgba(0,0,0,0.05) 70%, transparent 100%)",
+    "contentJustify": "center",
+    "contentPadding": "40px 50px",
+    "logoTop": "24px",
+    "logoRight": "24px",
+    "logoHeight": "40px",
+    "badgeFontSize": "14px",
+    "badgePadding": "6px 16px",
+    "badgeRadius": "4px",
+    "badgeMarginBottom": "12px",
+    "claimFontSize": "48px",
+    "claimLineHeight": "1.05",
+    "claimMarginBottom": "12px",
+    "claimMaxWidth": "55%",
+    "subheadingFontSize": "18px",
+    "subheadingMarginBottom": "20px",
+    "ctaFontSize": "16px",
+    "ctaPadding": "12px 32px",
+    "ctaRadius": "6px"
+  }
+}

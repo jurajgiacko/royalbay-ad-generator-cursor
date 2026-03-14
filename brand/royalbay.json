@@ -1,0 +1,98 @@
+{
+  "brand": "Royal Bay",
+  "fullName": "ROYAL BAY HIGH-TECH SPORTSWEAR",
+  "claim": "BETTER & FASTER",
+
+  "logo": {
+    "variants": {
+      "full_color":     { "file": "assets/logos/logo-full-color.png",    "desc": "Chevron(tyrkys) + ROYAL BAY + tagline, tmavý text, na svetlé pozadie" },
+      "full_ondark":    { "file": "assets/logos/logo-full-ondark.png",   "desc": "Chevron(tyrkys) + ROYAL BAY + tagline, biely text, na tmavé/foto pozadie" },
+      "full_white":     { "file": "assets/logos/logo-full-white.png",    "desc": "Celé biele, na tyrkysové pozadie" },
+      "rb_color":       { "file": "assets/logos/logo-rb-color.png",      "desc": "Chevron(tyrkys) + RB, tmavý text, na svetlé pozadie" },
+      "rb_ondark":      { "file": "assets/logos/logo-rb-ondark.png",     "desc": "Chevron(tyrkys) + RB, biely text — DEFAULT pre bannery na fotkách" },
+      "rb_white":       { "file": "assets/logos/logo-rb-white.png",      "desc": "Celé biele, na tyrkysové pozadie" }
+    },
+    "selectionLogic": {
+      "bannerWidth_gte_800":  "full_ondark",
+      "bannerWidth_400_to_799": "rb_ondark",
+      "bannerWidth_lt_400":   "rb_ondark"
+    },
+    "minWidth": 80,
+    "safeZone": "Výška chevron ikony na každej strane",
+    "defaultPosition": "top-right"
+  },
+
+  "colors": {
+    "turquoise":     { "hex": "#18AA9D", "pantone": "3272 C", "cmyk": [100,0,50,0] },
+    "black":         { "hex": "#000000", "cmyk": [0,0,0,100] },
+    "white":         { "hex": "#FFFFFF", "cmyk": [0,0,0,0] },
+    "darkGray":      { "hex": "#1A1A1A" },
+    "lightGray":     { "hex": "#F5F5F5" },
+    "overlay":       "rgba(0, 0, 0, 0.45)"
+  },
+
+  "fonts": {
+    "primary":       { "family": "Klavika", "fallback": "Montserrat, Arial, sans-serif", "weights": [400, 700] },
+    "display":       { "family": "BankGothic Md BT", "fallback": "Rajdhani, Orbitron, sans-serif", "tracking": -50, "textTransform": "uppercase" }
+  },
+
+  "rules": {
+    "logoAlwaysPresent": true,
+    "logoNeverModified": true,
+    "colorsOnlyFromPalette": true,
+    "fontsOnlyKlavikaOrFallback": true,
+    "claimMaxChars": 50,
+    "subheadingMaxChars": 80,
+    "maxTextCoveragePercent": 25,
+    "photoMustShowDynamicMovement": true,
+    "photoMustShowRoyalBayProduct": true
+  },
+
+  "sizes": {
+    "tier1": [
+      { "id": "landscape-1200x628",       "width": 1200, "height": 628,  "template": "landscape",          "platform": "Google RDA, Meta, Sklik" },
+      { "id": "square-1080x1080",          "width": 1080, "height": 1080, "template": "square",             "platform": "Google RDA, Meta, Sklik" },
+      { "id": "meta-vertical-1080x1350",   "width": 1080, "height": 1350, "template": "vertical-feed",      "platform": "Meta Feed" },
+      { "id": "meta-story-1080x1920",      "width": 1080, "height": 1920, "template": "vertical-fullscreen", "platform": "Meta Stories/Reels" },
+      { "id": "gdn-300x250",              "width": 300,  "height": 250,  "template": "rectangle",          "platform": "Google Display, Sklik" },
+      { "id": "gdn-728x90",               "width": 728,  "height": 90,   "template": "leaderboard",        "platform": "Google Display, Sklik" },
+      { "id": "gdn-320x100",              "width": 320,  "height": 100,  "template": "mobile-banner",      "platform": "Google Display, Sklik" },
+      { "id": "gdn-300x600",              "width": 300,  "height": 600,  "template": "half-page",          "platform": "Google Display, Sklik" },
+      { "id": "web-hero-1920x600",         "width": 1920, "height": 600,  "template": "web-hero",           "platform": "Web e-shop" },
+      { "id": "web-hero-mobile-750x750",   "width": 750,  "height": 750,  "template": "web-hero-mobile",    "platform": "Web e-shop mobile" },
+      { "id": "email-retina-1200x600",     "width": 1200, "height": 600,  "template": "email-hero",         "platform": "Ecomail newsletter" }
+    ],
+    "tier2": [
+      { "id": "gdn-160x600",              "width": 160,  "height": 600,  "template": "skyscraper",          "platform": "Google Display, Sklik" },
+      { "id": "gdn-336x280",              "width": 336,  "height": 280,  "template": "rectangle",           "platform": "Google Display" },
+      { "id": "sklik-300x300",             "width": 300,  "height": 300,  "template": "cube",                "platform": "Sklik" },
+      { "id": "sklik-480x300",             "width": 480,  "height": 300,  "template": "cube",                "platform": "Sklik" },
+      { "id": "sklik-480x480",             "width": 480,  "height": 480,  "template": "cube",                "platform": "Sklik" },
+      { "id": "sklik-970x310",             "width": 970,  "height": 310,  "template": "billboard",           "platform": "Sklik" },
+      { "id": "sklik-970x210",             "width": 970,  "height": 210,  "template": "billboard",           "platform": "Sklik" },
+      { "id": "sklik-500x200",             "width": 500,  "height": 200,  "template": "billboard",           "platform": "Sklik" },
+      { "id": "web-hero-1920x800",         "width": 1920, "height": 800,  "template": "web-hero",            "platform": "Web e-shop" },
+      { "id": "web-category-1200x400",     "width": 1200, "height": 400,  "template": "web-hero",            "platform": "Web e-shop" },
+      { "id": "web-promo-1200x300",        "width": 1200, "height": 300,  "template": "email-strip",         "platform": "Web e-shop" },
+      { "id": "email-retina-1200x800",     "width": 1200, "height": 800,  "template": "email-hero",          "platform": "Ecomail newsletter" },
+      { "id": "email-fullwidth-600x200",   "width": 600,  "height": 200,  "template": "email-strip",         "platform": "Ecomail newsletter" }
+    ]
+  },
+
+  "presets": {
+    "full_campaign_cz":  { "desc": "21 formátov — kompletné CZ pokrytie", "sizes": "tier1 + tier2" },
+    "full_campaign_sk":  { "desc": "15 formátov — kompletné SK pokrytie (bez Skliku)", "sizes": "tier1 + tier2 minus sklik-*" },
+    "outlet_campaign":   { "desc": "10 formátov — rýchly launch sale/outlet", "sizes": ["landscape-1200x628", "square-1080x1080", "meta-vertical-1080x1350", "meta-story-1080x1920", "gdn-300x250", "gdn-728x90", "gdn-320x100", "web-hero-1920x600", "web-hero-mobile-750x750", "email-retina-1200x600"] },
+    "meta_only":         { "desc": "4 formáty — iba Meta kampane", "sizes": ["landscape-1200x628", "square-1080x1080", "meta-vertical-1080x1350", "meta-story-1080x1920"] },
+    "web_only":          { "desc": "Web + email bez paid media", "sizes": ["web-hero-1920x600", "web-hero-mobile-750x750", "web-category-1200x400", "web-promo-1200x300", "email-retina-1200x600", "email-fullwidth-600x200"] },
+    "minimum_viable":    { "desc": "5 formátov — testovanie designu", "sizes": ["landscape-1200x628", "square-1080x1080", "gdn-300x250", "web-hero-1920x600", "email-retina-1200x600"] }
+  },
+
+  "fileSizeLimits": {
+    "google":  { "maxKB": 150,  "formats": ["jpg", "png"] },
+    "sklik":   { "maxKB": 150,  "formats": ["jpg", "png", "webp"] },
+    "meta":    { "maxKB": 30720, "formats": ["jpg", "png"] },
+    "web":     { "maxKB": 300,  "formats": ["jpg", "webp"] },
+    "email":   { "maxKB": 200,  "formats": ["jpg", "png"] }
+  }
+}

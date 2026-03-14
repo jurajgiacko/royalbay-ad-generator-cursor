@@ -1,0 +1,28 @@
+{
+  "templateId": "vertical-fullscreen",
+  "sizes": [
+    { "id": "meta-story-1080x1920", "width": 1080, "height": 1920 }
+  ],
+  "defaults": {
+    "photoPosition": "center 20%",
+    "overlayGradient": "linear-gradient(0deg, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0.4) 35%, rgba(0,0,0,0.05) 55%, transparent 100%)",
+    "contentJustify": "flex-end",
+    "contentPadding": "60px 50px 380px 50px",
+    "logoTop": "280px",
+    "logoRight": "30px",
+    "logoHeight": "44px",
+    "badgeFontSize": "18px",
+    "badgePadding": "10px 24px",
+    "badgeRadius": "4px",
+    "badgeMarginBottom": "18px",
+    "claimFontSize": "60px",
+    "claimLineHeight": "1.05",
+    "claimMarginBottom": "18px",
+    "claimMaxWidth": "90%",
+    "subheadingFontSize": "24px",
+    "subheadingMarginBottom": "30px",
+    "ctaFontSize": "22px",
+    "ctaPadding": "18px 44px",
+    "ctaRadius": "8px"
+  }
+}

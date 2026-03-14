@@ -1,0 +1,28 @@
+{
+  "templateId": "vertical-feed",
+  "sizes": [
+    { "id": "meta-vertical-1080x1350", "width": 1080, "height": 1350 }
+  ],
+  "defaults": {
+    "photoPosition": "center 25%",
+    "overlayGradient": "linear-gradient(0deg, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.4) 40%, rgba(0,0,0,0.05) 65%, transparent 100%)",
+    "contentJustify": "flex-end",
+    "contentPadding": "60px 50px",
+    "logoTop": "30px",
+    "logoRight": "30px",
+    "logoHeight": "44px",
+    "badgeFontSize": "16px",
+    "badgePadding": "8px 20px",
+    "badgeRadius": "4px",
+    "badgeMarginBottom": "16px",
+    "claimFontSize": "56px",
+    "claimLineHeight": "1.05",
+    "claimMarginBottom": "16px",
+    "claimMaxWidth": "90%",
+    "subheadingFontSize": "22px",
+    "subheadingMarginBottom": "28px",
+    "ctaFontSize": "20px",
+    "ctaPadding": "16px 40px",
+    "ctaRadius": "6px"
+  }
+}

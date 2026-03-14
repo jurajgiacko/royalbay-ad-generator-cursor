@@ -1,0 +1,28 @@
+{
+  "templateId": "leaderboard",
+  "sizes": [
+    { "id": "gdn-728x90", "width": 728, "height": 90 }
+  ],
+  "defaults": {
+    "photoPosition": "right center",
+    "overlayGradient": "linear-gradient(90deg, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0.6) 50%, rgba(0,0,0,0.1) 70%, transparent 100%)",
+    "contentJustify": "center",
+    "contentPadding": "10px 16px",
+    "logoTop": "10px",
+    "logoRight": "350px",
+    "logoHeight": "20px",
+    "badgeFontSize": "9px",
+    "badgePadding": "2px 8px",
+    "badgeRadius": "3px",
+    "badgeMarginBottom": "4px",
+    "claimFontSize": "22px",
+    "claimLineHeight": "1.1",
+    "claimMarginBottom": "0px",
+    "claimMaxWidth": "45%",
+    "subheadingFontSize": "0px",
+    "subheadingMarginBottom": "0px",
+    "ctaFontSize": "10px",
+    "ctaPadding": "4px 12px",
+    "ctaRadius": "3px"
+  }
+}

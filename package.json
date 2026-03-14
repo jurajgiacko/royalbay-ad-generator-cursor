@@ -1,0 +1,20 @@
+{
+  "name": "royalbay-ad-generator",
+  "version": "1.0.0",
+  "description": "Royal Bay Ad Creative Generator — automated performance banner generation",
+  "main": "generate.js",
+  "scripts": {
+    "generate": "node generate.js",
+    "validate": "node validate.js"
+  },
+  "keywords": ["royal-bay", "banner", "ad-generator"],
+  "author": "VITAR Sport",
+  "license": "UNLICENSED",
+  "type": "commonjs",
+  "dependencies": {
+    "commander": "^14.0.3",
+    "handlebars": "^4.7.8",
+    "puppeteer": "^24.39.1",
+    "sharp": "^0.34.5"
+  }
+}

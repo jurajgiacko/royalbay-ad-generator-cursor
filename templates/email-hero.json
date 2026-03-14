@@ -1,0 +1,29 @@
+{
+  "templateId": "email-hero",
+  "sizes": [
+    { "id": "email-retina-1200x600", "width": 1200, "height": 600 },
+    { "id": "email-retina-1200x800", "width": 1200, "height": 800 }
+  ],
+  "defaults": {
+    "photoPosition": "center center",
+    "overlayGradient": "linear-gradient(90deg, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.4) 40%, rgba(0,0,0,0.05) 70%, transparent 100%)",
+    "contentJustify": "center",
+    "contentPadding": "40px 50px",
+    "logoTop": "24px",
+    "logoRight": "24px",
+    "logoHeight": "40px",
+    "badgeFontSize": "14px",
+    "badgePadding": "6px 16px",
+    "badgeRadius": "4px",
+    "badgeMarginBottom": "12px",
+    "claimFontSize": "44px",
+    "claimLineHeight": "1.1",
+    "claimMarginBottom": "12px",
+    "claimMaxWidth": "55%",
+    "subheadingFontSize": "18px",
+    "subheadingMarginBottom": "20px",
+    "ctaFontSize": "16px",
+    "ctaPadding": "12px 30px",
+    "ctaRadius": "6px"
+  }
+}
