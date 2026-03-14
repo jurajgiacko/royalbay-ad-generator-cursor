@@ -20,7 +20,7 @@
     width: {{width}}px;
     height: {{height}}px;
     overflow: hidden;
-    background: #0a0a0a;
+    background: #2a2a2a;
   }
 
   .banner__photo {
@@ -38,12 +38,49 @@
     background: {{overlayGradient}};
   }
 
-  .banner__accent-line {
+  .banner__logo {
     position: absolute;
-    {{accentPosition}};
-    width: {{accentWidth}};
-    height: {{accentHeight}};
-    background: #18AA9D;
+    top: {{logoTop}};
+    left: {{logoLeft}};
+    z-index: 3;
+  }
+
+  .banner__logo img {
+    height: {{logoHeight}};
+    width: auto;
+  }
+
+  .banner__discount-circle {
+    position: absolute;
+    top: {{discountCircleTop}};
+    right: {{discountCircleRight}};
+    width: {{discountCircleSize}};
+    height: {{discountCircleSize}};
+    background: #e8175d;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 3;
+  }
+
+  .banner__discount-circle-value {
+    font-weight: 900;
+    font-size: {{discountValueSize}};
+    color: #FFFFFF;
+    line-height: 1;
+    letter-spacing: -0.03em;
+  }
+
+  .banner__discount-circle-label {
+    font-weight: 700;
+    font-size: {{discountLabelSize}};
+    color: #FFFFFF;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    line-height: 1;
+    margin-top: 2px;
   }
 
   .banner__content {
@@ -57,53 +94,16 @@
     z-index: 2;
   }
 
-  .banner__logo {
-    position: absolute;
-    top: {{logoTop}};
-    right: {{logoRight}};
-    z-index: 3;
-  }
-
-  .banner__logo img {
-    height: {{logoHeight}};
-    width: auto;
-  }
-
-  .banner__discount {
-    display: inline-flex;
-    align-items: baseline;
-    gap: {{discountGap}};
-    margin-bottom: {{discountMarginBottom}};
-    width: fit-content;
-  }
-
-  .banner__discount-value {
-    font-weight: 900;
-    font-size: {{discountFontSize}};
-    color: #18AA9D;
-    line-height: 0.9;
-    letter-spacing: -0.03em;
-  }
-
-  .banner__discount-percent {
-    font-weight: 800;
-    font-size: {{discountPercentSize}};
-    color: #18AA9D;
-    line-height: 0.9;
-  }
-
   .banner__badge {
     display: inline-block;
-    background: rgba(255, 255, 255, 0.12);
-    border: 1px solid rgba(255, 255, 255, 0.25);
-    backdrop-filter: blur(4px);
+    background: #e8740e;
     color: #FFFFFF;
-    font-weight: 700;
+    font-weight: 800;
     font-size: {{badgeFontSize}};
     padding: {{badgePadding}};
-    border-radius: 100px;
+    border-radius: 3px;
     text-transform: uppercase;
-    letter-spacing: 0.12em;
+    letter-spacing: 0.1em;
     margin-bottom: {{badgeMarginBottom}};
     width: fit-content;
   }
@@ -113,19 +113,21 @@
     font-size: {{claimFontSize}};
     line-height: {{claimLineHeight}};
     color: #FFFFFF;
-    text-transform: uppercase;
-    letter-spacing: -0.02em;
     margin-bottom: {{claimMarginBottom}};
     max-width: {{claimMaxWidth}};
+  }
+
+  .banner__claim strong {
+    font-weight: 900;
   }
 
   .banner__subheading {
     font-weight: 400;
     font-size: {{subheadingFontSize}};
-    color: rgba(255, 255, 255, 0.7);
+    color: rgba(255, 255, 255, 0.8);
+    font-style: italic;
     margin-bottom: {{subheadingMarginBottom}};
     max-width: {{claimMaxWidth}};
-    letter-spacing: 0.01em;
   }
 
   .banner__cta {
@@ -137,15 +139,25 @@
     font-weight: 700;
     font-size: {{ctaFontSize}};
     padding: {{ctaPadding}};
-    border-radius: 100px;
+    border-radius: 4px;
     text-decoration: none;
     letter-spacing: 0.02em;
     width: fit-content;
-    transition: background 0.2s;
   }
 
   .banner__cta-arrow {
     font-size: 1.1em;
+  }
+
+  .banner__footer {
+    position: absolute;
+    bottom: {{footerBottom}};
+    right: {{footerRight}};
+    font-weight: 400;
+    font-size: {{footerFontSize}};
+    color: rgba(255, 255, 255, 0.5);
+    letter-spacing: 0.08em;
+    z-index: 3;
   }
 </style>
 </head>

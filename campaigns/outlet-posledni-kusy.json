@@ -14,17 +14,17 @@
     {
       "id": "posledni-kusy-CZ",
       "image": "assets/photos/trail-runner-pink.png",
-      "claim": "NAKUPTE, NEŽ DOJDOU",
-      "badge": "OUTLET · POSLEDNÍ KUSY",
-      "subheading": "Kompresní podkolenky, návleky a ponožky — sleva přímo v ceně",
+      "claim": "Vybrané modely<br>se slevou <strong>30 %</strong>",
+      "badge": "OUTLET",
+      "subheading": "Některé barvy a velikosti docházejí. Sleva je přímo v ceně.",
       "cta": "Objednat teď"
     },
     {
       "id": "posledni-kusy-SK",
       "image": "assets/photos/trail-runner-pink.png",
-      "claim": "NAKÚPTE, KÝM SÚ",
-      "badge": "OUTLET · POSLEDNÉ KUSY",
-      "subheading": "Kompresné podkolienky, návleky a ponožky — zľava priamo v cene",
+      "claim": "Vybrané modely<br>so zľavou <strong>30 %</strong>",
+      "badge": "OUTLET",
+      "subheading": "Niektoré farby a veľkosti dochádzajú. Zľava je priamo v cene.",
       "cta": "Objednať teraz"
     }
   ]

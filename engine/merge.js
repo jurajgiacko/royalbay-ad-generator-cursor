@@ -18,19 +18,25 @@ function loadTemplateConfig(templateId, projectRoot) {
 function selectLogo(width, brandConfig, projectRoot) {
   let variantKey = width >= 800 ? 'full_ondark' : 'rb_ondark';
   const logoFile = brandConfig.logo.variants[variantKey].file;
-  return path.join(projectRoot, logoFile);
+  const fullPath = path.join(projectRoot, logoFile);
+  return fullPath;
 }
 
-function buildBannerBody(variant, logoPath) {
-  const logoSrc = `file://${logoPath}`;
+function buildBannerBody(variant, logoPath, defaults) {
   const imageSrc = variant._resolvedImage;
+  const logoExists = fs.existsSync(logoPath);
+  const logoSrc = `file://${logoPath}`;
 
-  let discountHtml = '';
+  const logoHtml = logoExists
+    ? `<div class="banner__logo"><img src="${logoSrc}" alt="Royal Bay"></div>`
+    : '';
+
+  let discountCircleHtml = '';
   if (variant.discount) {
-    discountHtml = `
-    <div class="banner__discount">
-      <span class="banner__discount-value">${variant.discount}</span>
-      <span class="banner__discount-percent">%</span>
+    discountCircleHtml = `
+    <div class="banner__discount-circle">
+      <span class="banner__discount-circle-value">${variant.discount} %</span>
+      <span class="banner__discount-circle-label">OUTLET</span>
     </div>`;
   }
 
@@ -49,24 +55,24 @@ function buildBannerBody(variant, logoPath) {
     ctaHtml = `<div class="banner__cta">${variant.cta} <span class="banner__cta-arrow">→</span></div>`;
   }
 
-  const logoExists = fs.existsSync(logoPath);
-  const logoHtml = logoExists
-    ? `<div class="banner__logo"><img src="${logoSrc}" alt="Royal Bay"></div>`
+  const showFooter = defaults.footerFontSize && defaults.footerFontSize !== '0px';
+  const footerHtml = showFooter
+    ? `<div class="banner__footer">ROYAL BAY | BETTER &amp; FASTER</div>`
     : '';
 
   return `
 <div class="banner">
   <img class="banner__photo" src="${imageSrc}" alt="">
   <div class="banner__overlay"></div>
-  <div class="banner__accent-line"></div>
   ${logoHtml}
+  ${discountCircleHtml}
   <div class="banner__content">
-    ${discountHtml}
     ${badgeHtml}
     <div class="banner__claim">${variant.claim || ''}</div>
     ${subheadingHtml}
     ${ctaHtml}
   </div>
+  ${footerHtml}
 </div>`;
 }
 
@@ -76,7 +82,7 @@ function merge(brandConfig, templateId, variant, sizeConfig, projectRoot) {
   const defaults = templateConfig.defaults;
 
   const logoPath = selectLogo(sizeConfig.width, brandConfig, projectRoot);
-  const body = buildBannerBody(variant, logoPath);
+  const body = buildBannerBody(variant, logoPath, defaults);
 
   const vars = {
     width: sizeConfig.width,
