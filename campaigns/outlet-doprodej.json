@@ -1,0 +1,35 @@
+{
+  "campaign": "Royal Bay Outlet - Doprodej",
+  "brand": "royalbay",
+  "created": "2026-03-14",
+  "author": "Juraj",
+
+  "defaults": {
+    "template": "landscape",
+    "preset": "full_campaign_cz",
+    "discount": "-30"
+  },
+
+  "variants": [
+    {
+      "id": "doprodej-CZ",
+      "image": "assets/photos/trail-runners-mountain.png",
+      "focalPoint": { "x": 0.4, "y": 0.3 },
+      "subjectBounds": { "top": 0.1, "bottom": 0.9, "left": 0.15, "right": 0.75 },
+      "claim": "-30 %<br>NA VYBRANÉ PRODUKTY",
+      "badge": "DOPRODEJ",
+      "subheading": "Dokud jsou na skladě",
+      "cta": "Chci slevu"
+    },
+    {
+      "id": "doprodej-SK",
+      "image": "assets/photos/trail-runners-mountain.png",
+      "focalPoint": { "x": 0.4, "y": 0.3 },
+      "subjectBounds": { "top": 0.1, "bottom": 0.9, "left": 0.15, "right": 0.75 },
+      "claim": "-30 %<br>NA VYBRANÉ PRODUKTY",
+      "badge": "VÝPREDAJ",
+      "subheading": "Kým sú na sklade",
+      "cta": "Chcem zľavu"
+    }
+  ]
+}

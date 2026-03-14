@@ -14,6 +14,8 @@
     {
       "id": "posledni-kusy-CZ",
       "image": "assets/photos/trail-runner-pink.png",
+      "focalPoint": { "x": 0.45, "y": 0.25 },
+      "subjectBounds": { "top": 0.05, "bottom": 0.95, "left": 0.25, "right": 0.65 },
       "claim": "NAKUPTE,<br>NEŽ DOJDOU",
       "badge": "POSLEDNÍ KUSY",
       "subheading": "Kým jsou na skladě",
@@ -22,6 +24,8 @@
     {
       "id": "posledni-kusy-SK",
       "image": "assets/photos/trail-runner-pink.png",
+      "focalPoint": { "x": 0.45, "y": 0.25 },
+      "subjectBounds": { "top": 0.05, "bottom": 0.95, "left": 0.25, "right": 0.65 },
       "claim": "NAKÚPTE,<br>KÝM SÚ",
       "badge": "POSLEDNÉ KUSY",
       "subheading": "Kým sú na sklade",

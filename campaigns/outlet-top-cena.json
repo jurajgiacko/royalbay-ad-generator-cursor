@@ -1,0 +1,35 @@
+{
+  "campaign": "Royal Bay Outlet - Top Cena",
+  "brand": "royalbay",
+  "created": "2026-03-14",
+  "author": "Juraj",
+
+  "defaults": {
+    "template": "landscape",
+    "preset": "full_campaign_cz",
+    "discount": "-30"
+  },
+
+  "variants": [
+    {
+      "id": "top-cena-CZ",
+      "image": "assets/photos/trail-runner-socks-closeup.png",
+      "focalPoint": { "x": 0.45, "y": 0.45 },
+      "subjectBounds": { "top": 0.05, "bottom": 0.95, "left": 0.2, "right": 0.7 },
+      "claim": "LIMITOVANÉ MNOŽSTVÍ<br>ZA -30 %",
+      "badge": "TOP CENA",
+      "subheading": "Dokud jsou na skladě",
+      "cta": "Zobrazit outlet"
+    },
+    {
+      "id": "top-cena-SK",
+      "image": "assets/photos/trail-runner-socks-closeup.png",
+      "focalPoint": { "x": 0.45, "y": 0.45 },
+      "subjectBounds": { "top": 0.05, "bottom": 0.95, "left": 0.2, "right": 0.7 },
+      "claim": "LIMITOVANÉ MNOŽSTVO<br>ZA -30 %",
+      "badge": "TOP CENA",
+      "subheading": "Kým sú na sklade",
+      "cta": "Zobraziť outlet"
+    }
+  ]
+}

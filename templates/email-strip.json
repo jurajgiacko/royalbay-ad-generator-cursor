@@ -1,0 +1,53 @@
+{
+  "templateId": "email-strip",
+  "sizes": [
+    { "id": "web-promo-1200x300", "width": 1200, "height": 300 },
+    { "id": "email-fullwidth-600x200", "width": 600, "height": 200 }
+  ],
+  "defaults": {
+    "photoPosition": "center center",
+    "overlayGradient": "linear-gradient(90deg, rgba(42,42,42,0.88) 0%, rgba(42,42,42,0.55) 38%, rgba(42,42,42,0.1) 58%, transparent 100%)",
+    "contentJustify": "center",
+    "contentPadding": "45px 90px 15px 160px",
+    "logoTop": "14px",
+    "logoLeft": "18px",
+    "logoHeight": "30px",
+    "discountCircleTop": "8px",
+    "discountCircleRight": "18px",
+    "discountCircleSize": "60px",
+    "discountValueSize": "16px",
+    "discountLabelSize": "6px",
+    "badgeFontSize": "8px",
+    "badgePadding": "2px 8px",
+    "badgeMarginBottom": "4px",
+    "claimFontSize": "22px",
+    "claimLineHeight": "1.1",
+    "claimMarginBottom": "3px",
+    "claimMaxWidth": "100%",
+    "subheadingFontSize": "9px",
+    "subheadingMarginBottom": "8px",
+    "ctaFontSize": "10px",
+    "ctaPadding": "5px 14px",
+    "footerBottom": "0px",
+    "footerRight": "0px",
+    "footerFontSize": "0px"
+  },
+  "overrides": {
+    "email-fullwidth-600x200": {
+      "contentPadding": "10px 75px 10px 120px",
+      "logoHeight": "22px",
+      "discountCircleSize": "48px",
+      "discountCircleRight": "10px",
+      "discountCircleTop": "6px",
+      "discountValueSize": "13px",
+      "discountLabelSize": "5px",
+      "claimFontSize": "15px",
+      "badgeFontSize": "6px",
+      "badgeMarginBottom": "2px",
+      "subheadingFontSize": "0px",
+      "subheadingMarginBottom": "0px",
+      "ctaFontSize": "8px",
+      "ctaPadding": "3px 10px"
+    }
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "templateId": "billboard",
+  "sizes": [
+    { "id": "sklik-970x310", "width": 970, "height": 310 },
+    { "id": "sklik-970x210", "width": 970, "height": 210 },
+    { "id": "sklik-500x200", "width": 500, "height": 200 }
+  ],
+  "defaults": {
+    "photoPosition": "center center",
+    "overlayGradient": "linear-gradient(90deg, rgba(42,42,42,0.88) 0%, rgba(42,42,42,0.55) 38%, rgba(42,42,42,0.1) 58%, transparent 100%)",
+    "contentJustify": "center",
+    "contentPadding": "50px 100px 16px 170px",
+    "logoTop": "14px",
+    "logoLeft": "16px",
+    "logoHeight": "32px",
+    "discountCircleTop": "10px",
+    "discountCircleRight": "18px",
+    "discountCircleSize": "68px",
+    "discountValueSize": "18px",
+    "discountLabelSize": "7px",
+    "badgeFontSize": "9px",
+    "badgePadding": "3px 8px",
+    "badgeMarginBottom": "6px",
+    "claimFontSize": "26px",
+    "claimLineHeight": "1.1",
+    "claimMarginBottom": "4px",
+    "claimMaxWidth": "100%",
+    "subheadingFontSize": "10px",
+    "subheadingMarginBottom": "10px",
+    "ctaFontSize": "11px",
+    "ctaPadding": "6px 16px",
+    "footerBottom": "0px",
+    "footerRight": "0px",
+    "footerFontSize": "0px"
+  },
+  "overrides": {
+    "sklik-970x210": {
+      "contentPadding": "12px 100px 12px 170px",
+      "claimFontSize": "20px",
+      "badgeFontSize": "7px",
+      "badgeMarginBottom": "3px",
+      "subheadingFontSize": "8px",
+      "subheadingMarginBottom": "5px",
+      "ctaFontSize": "9px",
+      "ctaPadding": "4px 12px"
+    },
+    "sklik-500x200": {
+      "contentPadding": "10px 75px 10px 120px",
+      "logoHeight": "22px",
+      "discountCircleSize": "50px",
+      "discountCircleRight": "10px",
+      "discountCircleTop": "8px",
+      "discountValueSize": "14px",
+      "discountLabelSize": "5px",
+      "claimFontSize": "16px",
+      "badgeFontSize": "6px",
+      "badgeMarginBottom": "3px",
+      "subheadingFontSize": "0px",
+      "subheadingMarginBottom": "0px",
+      "ctaFontSize": "8px",
+      "ctaPadding": "3px 10px"
+    }
+  }
+}

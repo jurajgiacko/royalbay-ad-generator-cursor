@@ -4,6 +4,8 @@ const { merge, loadTemplateConfig } = require('./merge');
 const { renderBanner } = require('./render');
 const { compressBanner } = require('./compress');
 const { validateVariant } = require('../validators/brand-validator');
+const { validateLayout } = require('../validators/layout-validator');
+const { validatePhoto } = require('../validators/photo-validator');
 
 function resolveSizes(preset, brandConfig) {
   const presetConfig = brandConfig.presets[preset];
@@ -111,7 +113,23 @@ async function generateCampaign(campaignPath, options = {}) {
       }
 
       try {
-        const html = merge(brandConfig, found.templateId, merged, sizeConfig, projectRoot);
+        const templateConfig = loadTemplateConfig(found.templateId, projectRoot);
+        const sizeOverrides = (templateConfig.overrides && templateConfig.overrides[sizeConfig.id]) || {};
+        const defaults = { ...templateConfig.defaults, ...sizeOverrides };
+
+        const layoutResult = validateLayout(defaults, sizeConfig.width, sizeConfig.height, !!merged.discount);
+        layoutResult.warnings.forEach((w) => console.log(`   ${w.msg}`));
+        layoutResult.errors.forEach((e) => console.log(`   ❌ ${e.msg}`));
+
+        const photoResult = validatePhoto(merged, defaults, sizeConfig.width, sizeConfig.height);
+        photoResult.warnings.forEach((w) => console.log(`   ${w.msg}`));
+
+        const mergeOptions = {};
+        if (photoResult.suggestedPhotoPosition) {
+          mergeOptions.photoPositionOverride = photoResult.suggestedPhotoPosition;
+        }
+
+        const html = merge(brandConfig, found.templateId, merged, sizeConfig, projectRoot, mergeOptions);
         const pngPath = path.join(outputBase, variant.id, `${sizeConfig.id}.png`);
 
         await renderBanner(html, sizeConfig.width, sizeConfig.height, pngPath);
@@ -124,6 +142,8 @@ async function generateCampaign(campaignPath, options = {}) {
           height: sizeConfig.height,
           file: path.relative(outputBase, finalPath),
           platform: sizeConfig.platform,
+          layoutWarnings: layoutResult.warnings.length,
+          photoWarnings: photoResult.warnings.length,
         });
       } catch (err) {
         console.log(`   ❌ Error ${sizeConfig.id}: ${err.message}`);

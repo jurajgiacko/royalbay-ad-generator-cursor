@@ -1,0 +1,36 @@
+{
+  "templateId": "cube",
+  "sizes": [
+    { "id": "sklik-300x300", "width": 300, "height": 300 },
+    { "id": "sklik-480x300", "width": 480, "height": 300 },
+    { "id": "sklik-480x480", "width": 480, "height": 480 }
+  ],
+  "defaults": {
+    "photoPosition": "center center",
+    "overlayGradient": "linear-gradient(0deg, rgba(42,42,42,0.92) 0%, rgba(42,42,42,0.5) 50%, rgba(42,42,42,0.1) 75%, transparent 100%)",
+    "contentJustify": "flex-end",
+    "contentPadding": "14px 16px",
+    "logoTop": "10px",
+    "logoLeft": "12px",
+    "logoHeight": "28px",
+    "discountCircleTop": "8px",
+    "discountCircleRight": "10px",
+    "discountCircleSize": "56px",
+    "discountValueSize": "15px",
+    "discountLabelSize": "6px",
+    "badgeFontSize": "8px",
+    "badgePadding": "2px 7px",
+    "badgeMarginBottom": "6px",
+    "claimFontSize": "20px",
+    "claimLineHeight": "1.12",
+    "claimMarginBottom": "4px",
+    "claimMaxWidth": "85%",
+    "subheadingFontSize": "9px",
+    "subheadingMarginBottom": "10px",
+    "ctaFontSize": "9px",
+    "ctaPadding": "5px 12px",
+    "footerBottom": "0px",
+    "footerRight": "0px",
+    "footerFontSize": "0px"
+  }
+}

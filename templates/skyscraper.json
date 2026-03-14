@@ -1,0 +1,34 @@
+{
+  "templateId": "skyscraper",
+  "sizes": [
+    { "id": "gdn-160x600", "width": 160, "height": 600 }
+  ],
+  "defaults": {
+    "photoPosition": "center 20%",
+    "overlayGradient": "linear-gradient(0deg, rgba(42,42,42,0.95) 0%, rgba(42,42,42,0.55) 45%, rgba(42,42,42,0.05) 65%, transparent 100%)",
+    "contentJustify": "flex-end",
+    "contentPadding": "10px 10px",
+    "logoTop": "8px",
+    "logoLeft": "8px",
+    "logoHeight": "20px",
+    "discountCircleTop": "6px",
+    "discountCircleRight": "6px",
+    "discountCircleSize": "48px",
+    "discountValueSize": "13px",
+    "discountLabelSize": "5px",
+    "badgeFontSize": "6px",
+    "badgePadding": "2px 5px",
+    "badgeMarginBottom": "5px",
+    "claimFontSize": "14px",
+    "claimLineHeight": "1.15",
+    "claimMarginBottom": "4px",
+    "claimMaxWidth": "100%",
+    "subheadingFontSize": "7px",
+    "subheadingMarginBottom": "8px",
+    "ctaFontSize": "7px",
+    "ctaPadding": "4px 8px",
+    "footerBottom": "0px",
+    "footerRight": "0px",
+    "footerFontSize": "0px"
+  }
+}

@@ -9,10 +9,10 @@
     "photoPosition": "center center",
     "overlayGradient": "linear-gradient(90deg, rgba(42,42,42,0.85) 0%, rgba(42,42,42,0.55) 30%, rgba(42,42,42,0.1) 50%, transparent 100%)",
     "contentJustify": "center",
-    "contentPadding": "100px 60px 50px 60px",
+    "contentPadding": "100px 160px 50px 60px",
     "logoTop": "30px",
     "logoLeft": "50px",
-    "logoHeight": "50px",
+    "logoHeight": "70px",
     "discountCircleTop": "18px",
     "discountCircleRight": "36px",
     "discountCircleSize": "110px",
@@ -32,5 +32,24 @@
     "footerBottom": "18px",
     "footerRight": "30px",
     "footerFontSize": "11px"
+  },
+  "overrides": {
+    "web-category-1200x400": {
+      "contentPadding": "90px 140px 20px 60px",
+      "logoHeight": "50px",
+      "discountCircleSize": "80px",
+      "discountValueSize": "22px",
+      "discountLabelSize": "9px",
+      "badgeFontSize": "10px",
+      "badgePadding": "4px 12px",
+      "badgeMarginBottom": "8px",
+      "claimFontSize": "32px",
+      "claimMarginBottom": "6px",
+      "subheadingFontSize": "12px",
+      "subheadingMarginBottom": "12px",
+      "ctaFontSize": "12px",
+      "ctaPadding": "8px 20px",
+      "footerFontSize": "0px"
+    }
   }
 }

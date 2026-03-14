@@ -22,10 +22,14 @@ function selectLogo(width, brandConfig, projectRoot) {
   return fullPath;
 }
 
-function buildBannerBody(variant, logoPath, defaults) {
+function buildBannerBody(variant, logoPath, defaults, photoPositionOverride) {
   const imageSrc = variant._resolvedImage;
   const logoExists = fs.existsSync(logoPath);
   const logoSrc = `file://${logoPath}`;
+
+  const photoStyle = photoPositionOverride
+    ? ` style="object-position: ${photoPositionOverride}"`
+    : '';
 
   const logoHtml = logoExists
     ? `<div class="banner__logo"><img src="${logoSrc}" alt="Royal Bay"></div>`
@@ -62,7 +66,7 @@ function buildBannerBody(variant, logoPath, defaults) {
 
   return `
 <div class="banner">
-  <img class="banner__photo" src="${imageSrc}" alt="">
+  <img class="banner__photo" src="${imageSrc}" alt=""${photoStyle}>
   <div class="banner__overlay"></div>
   ${logoHtml}
   ${discountCircleHtml}
@@ -76,13 +80,15 @@ function buildBannerBody(variant, logoPath, defaults) {
 </div>`;
 }
 
-function merge(brandConfig, templateId, variant, sizeConfig, projectRoot) {
+function merge(brandConfig, templateId, variant, sizeConfig, projectRoot, options = {}) {
   const templateHtml = loadTemplate(projectRoot);
   const templateConfig = loadTemplateConfig(templateId, projectRoot);
-  const defaults = templateConfig.defaults;
+
+  const sizeOverrides = (templateConfig.overrides && templateConfig.overrides[sizeConfig.id]) || {};
+  const defaults = { ...templateConfig.defaults, ...sizeOverrides };
 
   const logoPath = selectLogo(sizeConfig.width, brandConfig, projectRoot);
-  const body = buildBannerBody(variant, logoPath, defaults);
+  const body = buildBannerBody(variant, logoPath, defaults, options.photoPositionOverride);
 
   const vars = {
     width: sizeConfig.width,
